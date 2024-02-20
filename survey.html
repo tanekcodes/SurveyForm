@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Market Research Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="background-fixed"></div> <!-- Fixed background container -->
+    <header class="header">
+      <h1 id="title" class="title">Market Research Survey Form</h1>
+      <p id="description" class="description">
+        Please fill in the below information so we can improve our business model
+      </p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+         <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="17"
+            max="50"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+</fieldset>
+<fieldset>
+      <div class="form-group">
+        <label id="often" for="dropdown">How often do you eat out?<select id="dropdown" name="often-eat">
+            <option value="">(select one)</option>
+            <option value="1">Less than once a month</option>
+            <option value="2">About twice a month</option>
+            <option value="3">3-4 times a month</option>
+            <option value="4">More than 4 times a month</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend>Usually when you go out for (ethnic) food, what is more important:</legend>
+        <label for="important"><input id="important-auth" type="radio" name="important" class="inline" value="1" checked /> Authenticity</label>
+        <label for="important-auth-cost"><input id="important-auth-cost" type="radio" name="important" class="inline" value="2" /> Mostly Authenticity</label>
+        <label for="important-both"><input id="important-both" type="radio" name="important" class="inline" value="3" /> Both</label>
+        <label for="important-cost-auth"><input id="important-cost-auth" type="radio" name="important" class="inline" value="4" /> Mostly Cost</label>
+        <label for="important-cost"><input id="important-cost" type="radio" name="important" class="inline" value="5" /> Cost</label>
+        </fieldset>
+
+    <fieldset>
+
+<div class="form-group">
+        <label id="cost" for="cost">How much do you usually spend on (fast casual) food per order?<select id="cost" name="cost">
+<option value="">(select one)</option>
+            <option value="1">$6 - $8</option>
+            <option value="2">$8 - $10</option>
+            <option value="3">$10 - $12</option>
+            <option value="4">$12 - $14</option>
+          </select>
+</label>
+    </fieldset>
+
+<fieldset>
+  <legend>What are your favorite Indian dishes?</legend>
+  <div id="dishes-checkboxes">
+    <input id="CTM" type="checkbox" name="dishes" value="CTM"><label for="CTM">Chicken Tikka Masala</label>
+<input id="BC" type="checkbox" name="dishes" value="BC">
+    <label for="BC">Butter Chicken</label>
+
+    <input id="PL" type="checkbox" name="dishes" value="PL">
+    <label for="PL">Paneer Lababdar</label>
+
+    <input id="MK" type="checkbox" name="dishes" value="MK">
+    <label for="MK">Malai Kofta</label>
+
+    <input id="Daal" type="checkbox" name="dishes" value="Daal">
+    <label for="Daal">Daal Tadka</label>
+
+    <input id="Sambhar" type="checkbox" name="dishes" value="Sambhar">
+    <label for="Sambhar">Sambhar</label>
+
+    <input id="DosaMasala" type="checkbox" name="dishes" value="Dosa Masala">
+    <label for="DosaMasala">Dosa Masala</label>
+
+    <input id="NotTried" type="checkbox" name="dishes" value="Not Tried">
+    <label for="NotTried">I have not tried Indian Food but would love to!</label>
+  </div>
+</fieldset>
+
+  <fieldset>
+    <div>
+  <label for="others">Notes or Other dishes you like:
+          <textarea id="others" name="others" rows="3" cols="30" placeholder="I like pakori but can not handle spicy food..."></textarea>
+</label> </div>
+</fieldset>
+
+<input id="submit" type="submit" value="Submit" />
+
+</form>
+  </div>
+</body>
+</html>
